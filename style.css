@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    box-sizing: border-box;
+    user-select: none;
+  }
+  :root{
+    --blue : rgb(0,97,215) ;
+  }
+  body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+  }
+  .container{
+    box-shadow: 2px 2px 5px var(--blue),-2px -2px 5px var(--blue);
+    border-radius: 20px;
+    padding: 20px;
+    
+  }
+  .container .output{
+    width: 100%;
+  }
+  .container .output input{
+    outline: none;
+    margin: 20px 0;
+    height: 70px;
+    border-radius: 10px;
+    font-size: 50px;
+    padding: 5px;
+    text-align: end;
+    width: 300px;
+    background: black;
+    box-shadow: 2px 2px 5px var(--blue), -2px -2px 5px var(--blue);
+    color: var(--blue);
+    border: 2px solid var(--blue);
+  }
+  input::placeholder{
+    color: var(--blue);
+  }
+  .btns{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    gap: 10px;
+  }
+  .btns button{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 30px;
+    border: none;
+    background: black;
+    color: white;
+    box-shadow: 2px 2px 5px grey;
+  }
+  .btns #equal{
+    width: 145px;
+    border-radius: 30px;
+    font-size: 50px;
+    grid-column: span 2;
+  }
+  .btns .clor{
+    background: var(--blue);
+    color: white;
+  }
+  .menu-icon{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .menu-icon span{
+    display: block;
+    border: 2px solid var(--blue);
+    width: 30px;
+    border-radius: 2px;
+    margin: 5px;
+  }
+  .colors{
+    position: absolute;
+    top: 50px;
+  }
+  .colors div{
+    display: inline-block;
+    margin: 5px;
+  }
+  .colors .red{
+    width: 40px;
+    height: 40px;
+    background: red;
+    border-radius: 50%;
+  }
+  .colors .pink{
+    width: 40px;
+    height: 40px;
+    background: pink;
+    border-radius: 50%;
+  }

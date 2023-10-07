@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="colors">
+      <div class="red"></div>
+      <div class="pink"></div>
+    </div>
+
+    <div class="container">
+      <div class="output">
+        <input type="text" placeholder="0" readonly />
+      </div>
+      <div class="btns">
+        <button class="clor" onclick="clr()">C</button>
+        <button class="clor" onclick="del()">&laquo;</button>
+        <button class="clor" onclick="insert('%')">%</button>
+        <button class="clor" onclick="insert('/')">÷</button>
+
+        <button onclick="insert('7')">7</button>
+        <button onclick="insert('8')">8</button>
+        <button onclick="insert('9')">9</button>
+        <button class="clor" onclick="insert('*')">x</button>
+
+        <button onclick="insert('4')">4</button>
+        <button onclick="insert('5')">5</button>
+        <button onclick="insert('6')">6</button>
+        <button onclick="insert('-')" class="clor">-</button>
+
+        <button onclick="insert('1')">1</button>
+        <button onclick="insert('2')">2</button>
+        <button onclick="insert('3')">3</button>
+        <button onclick="insert('+')" class="clor">+</button>
+
+        <button onclick="insert('0')">0</button>
+        <button onclick="insert('.')">.</button>
+        <button id="equal" class="clor" onclick="calc()">=</button>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
